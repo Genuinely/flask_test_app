@@ -1,0 +1,7 @@
+<p>{{ user.username }},</p>
+<p>Welcome to <b>Flask Test App</b>!</p>
+<p>To confirm your account, <a href="{{ url_for('auth.confirm', token=token, _external=True) }}">click here</a>.</p>
+<p>Alternatively, you can paste the following link in your browser's address bar:</p>
+<p>{{ url_for('auth.confirm', token=token, _external=True) }}</p>
+<p>Genuinely,</p>
+<p>The Flask Test App Team</p>

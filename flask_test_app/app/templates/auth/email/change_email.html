@@ -1,0 +1,6 @@
+<p>{{ user.username }},</p>
+<p>To confirm your new email address <a href="{{ url_for('auth.change_email', token=token, _external=True) }}">click here</a>.</p>
+<p>Or, you can use the following link:</p>
+<p>{{ url_for('auth.change_email', token=token, _external=True) }}</p>
+<p>Genuinely,</p>
+<p>Flask Test App</p>

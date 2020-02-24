@@ -1,0 +1,11 @@
+{{ user.username }},
+
+Welcome to Flask Test App.
+
+To confirm your account please click on the following link:
+
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+Sincerely,
+
+The Flask Test App 
